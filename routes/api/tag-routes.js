@@ -35,7 +35,9 @@ router.put('/:id', (req, res) => {
       id: req.params.id,
     }
   }).then((tag) => {
-    res.json(tag)
+    res.json({
+      message: 'Updated successfully.'
+    })
   })
 });
 
